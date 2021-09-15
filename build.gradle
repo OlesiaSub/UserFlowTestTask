@@ -1,0 +1,21 @@
+plugins {
+    id 'java'
+}
+
+group 'org.hse'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
+    implementation 'org.jsoup:jsoup:1.14.2'
+    implementation group: 'org.eclipse.collections', name: 'eclipse-collections', version: '11.0.0.M2'
+}
+
+test {
+    useJUnitPlatform()
+}

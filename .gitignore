@@ -1,0 +1,9 @@
+.gradle/
+.build/
+build/
+.output/
+.idea/
+*.iml
+out/
+.gitattributes
+output*
